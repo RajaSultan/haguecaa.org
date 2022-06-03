@@ -1,1 +1,17 @@
-var myCarousel=document.querySelector("#carouselExampleIndicators"),carousel=new bootstrap.Carousel(myCarousel,{interval:3e3,wrap:!0});AOS.init({disable:!1,startEvent:"DOMContentLoaded",initClassName:"aos-init",animatedClassName:"aos-animate",useClassNames:!1,disableMutationObserver:!1,debounceDelay:50,throttleDelay:99,offset:120,delay:0,duration:400,easing:"ease",once:!1,mirror:!1,anchorPlacement:"top-bottom"});
+AOS.init({
+  disable: !1,
+  startEvent: "DOMContentLoaded",
+  initClassName: "aos-init",
+  animatedClassName: "aos-animate",
+  useClassNames: !1,
+  disableMutationObserver: !1,
+  debounceDelay: 50,
+  throttleDelay: 99,
+  offset: 120,
+  delay: 0,
+  duration: 400,
+  easing: "ease",
+  once: !1,
+  mirror: !1,
+  anchorPlacement: "top-bottom",
+});
