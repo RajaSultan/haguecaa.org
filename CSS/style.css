@@ -14,33 +14,10 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  background: url("../VIDEO/pre-loader.gif");
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-animation: spin 1s infinite linear;
-          animation: spin 1s infinite linear;
-}
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 #overlay {
@@ -298,7 +275,7 @@ body {
     padding: 0 30px !important;
   }
   .news-section {
-    padding: 25px 0 !important;
+    padding: 25px 16px !important;
   }
   .footer-section img {
     width: 10rem !important;
@@ -311,6 +288,9 @@ body {
   }
   .hague-court-section p {
     padding: 0 200px !important;
+  }
+  .news-section {
+    padding: 25px 20px !important;
   }
 }
 

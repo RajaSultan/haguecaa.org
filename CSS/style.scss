@@ -17,19 +17,10 @@ $secondary-color: #f8f7f7;
     position: absolute;
     top: 0;
     bottom: 0;
+    background: url("../VIDEO/pre-loader.gif");
     left: 0;
     right: 0;
     margin: auto;
-    animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 #overlay {
@@ -270,7 +261,7 @@ body {
     }
 
     .news-section {
-        padding: 25px 0 !important;
+        padding: 25px 16px !important;
     }
 
     .footer-section {
@@ -286,6 +277,9 @@ body {
         p {
             padding: 0 200px !important;
         }
+    }
+    .news-section {
+        padding: 25px 20px !important;
     }
 }
 @media (min-width: 992px) {
