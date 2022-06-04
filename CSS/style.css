@@ -5,10 +5,6 @@
   src: url(../FONTS/Lato-ExtraLight.ttf);
 }
 
-.fa-plane {
-  color: #052845;
-}
-
 .spinner {
   width: 80px;
   height: 80px;
@@ -300,6 +296,9 @@ body {
   }
   .hague-court-section p {
     padding: 0 30px !important;
+  }
+  .news-section {
+    padding: 25px 0 !important;
   }
   .footer-section img {
     width: 10rem !important;
