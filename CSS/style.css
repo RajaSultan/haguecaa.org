@@ -15,7 +15,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  background: url("../VIDEO//pre-loader.gif") no-repeat center center;
+  background-image: url("../VIDEO//pre-loader.gif") no-repeat center center;
   left: 0;
   right: 0;
   margin: auto;
