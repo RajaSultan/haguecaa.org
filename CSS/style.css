@@ -10,15 +10,41 @@
 }
 
 .spinner {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
-  background-image: url("../VIDEO//pre-loader.gif") no-repeat center center;
   left: 0;
   right: 0;
   margin: auto;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 #overlay {
@@ -48,15 +74,11 @@ body {
 }
 
 /*Navbar Section*/
-.navbar-section .main-logo {
+.navbar-section {
   background: #052845;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
 }
 
-.navbar-section .main-logo img {
+.navbar-section img {
   width: 12rem;
 }
 
@@ -277,14 +299,17 @@ body {
   .navbar-section img {
     width: 10rem;
   }
+  .news-section {
+    padding: 30px 0;
+  }
   .hague-court-section {
     margin: 60px 0;
   }
   .hague-court-section p {
     padding: 0 30px !important;
   }
-  .news-section {
-    padding: 25px 16px !important;
+  .founder {
+    height: 75%;
   }
   .footer-section img {
     width: 10rem !important;
@@ -297,9 +322,6 @@ body {
   }
   .hague-court-section p {
     padding: 0 200px !important;
-  }
-  .news-section {
-    padding: 25px 20px !important;
   }
 }
 
