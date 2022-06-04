@@ -5,16 +5,17 @@
   src: url(../FONTS/Lato-ExtraLight.ttf);
 }
 
+.fa-plane {
+  color: #052845;
+}
+
 .spinner {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #f3f3f3;
-  border-top: 3px solid #f25a41;
-  border-radius: 100%;
+  width: 120px;
+  height: 120px;
   position: absolute;
   top: 0;
   bottom: 0;
-  background: url("../VIDEO/pre-loader.gif");
+  background: url("../VIDEO//pre-loader.gif") no-repeat center center;
   left: 0;
   right: 0;
   margin: auto;
@@ -47,11 +48,15 @@ body {
 }
 
 /*Navbar Section*/
-.navbar-section {
+.navbar-section .main-logo {
   background: #052845;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
-.navbar-section img {
+.navbar-section .main-logo img {
   width: 12rem;
 }
 
@@ -112,6 +117,10 @@ body {
 }
 
 /*efficient-section*/
+.efficient-section {
+  background: #f8f7f7;
+}
+
 .efficient-section h3 {
   line-height: 1.5;
   font-weight: normal;
@@ -208,7 +217,7 @@ body {
 .founder {
   background: url("../ASSETS/ceo.jpeg") no-repeat center center fixed;
   display: table;
-  height: 60%;
+  height: 70%;
   position: relative;
   width: 100%;
   background-size: cover;
