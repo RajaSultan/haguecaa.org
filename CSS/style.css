@@ -209,11 +209,6 @@ body {
   letter-spacing: 4px;
 }
 
-.carousel img {
-  width: 100% !important;
-  height: auto !important;
-}
-
 /* founder sections */
 .founder {
   background: url("../ASSETS/ceo.jpeg") no-repeat center center fixed;
