@@ -22,7 +22,7 @@ body {
 }
 
 .fa-plane {
-  color: #052845;
+  color: #052645;
 }
 
 .spinner {
@@ -40,7 +40,7 @@ body {
 #overlay {
   height: 100%;
   width: 100%;
-  background: #052845;
+  background: #052645;
   position: fixed;
   left: 0;
   top: 0;
@@ -49,7 +49,7 @@ body {
 
 /*Navbar Section*/
 .navbar-section {
-  background: #052845;
+  background: #052645;
 }
 
 .navbar-section img {
@@ -258,7 +258,7 @@ body {
 
 /* footer sections */
 .footer-section {
-  background: #052845;
+  background: #052645;
 }
 
 .footer-section img {
@@ -268,7 +268,7 @@ body {
 /*Media Queries Started*/
 @media (max-width: 576px) {
   .navbar-section {
-    background: #052845;
+    background: #052645;
   }
   .navbar-section img {
     width: 10rem;
