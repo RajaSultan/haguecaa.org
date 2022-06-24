@@ -63,7 +63,7 @@ body {
     position: fixed; /* sticks to the top of the page, regardless of where you scroll */
     margin-bottom: 50px;
     width: 100%;
-    z-index: -999; /* puts itself on top of all other elements on the page */
+    z-index: 999; /* puts itself on top of all other elements on the page */
     padding: 10px 0;
 
     /* hiding the checkbox */
