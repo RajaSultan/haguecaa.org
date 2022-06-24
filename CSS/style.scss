@@ -70,12 +70,15 @@ body {
     .nav-toggle {
         display: none;
     }
+    .email {
+        color: #f1e5ac;
+    }
 
     /* STYLING/POSITIONING THE HAMBURGER MENU */
     .nav-toggle-label {
         position: absolute;
         top: 0;
-        margin-left: 1em;
+        margin-left: 4em;
         height: 100%;
         display: flex;
         align-items: center;
@@ -85,7 +88,7 @@ body {
     .nav-toggle-label span::before,
     .nav-toggle-label span::after {
         display: block;
-        background: #fff;
+        background: #f1e5ac;
         height: 1.5px;
         width: 30px;
         border-radius: 2px;
@@ -127,10 +130,11 @@ body {
         position: absolute;
         background: $primary-color;
         text-align: left;
+
         // width: 20%;
         transform: scale(1, 0);
         margin-left: -15px;
-        transform-origin: top !important; /* menu appears from the top instead if center, try and comment this out and see for yourself */
+        transform-origin: top right !important; /* menu appears from the top instead if center, try and comment this out and see for yourself */
         transition: transform 0.4s ease-in-out;
     }
 
@@ -154,7 +158,7 @@ body {
     }
 
     #menu a:hover {
-        color: coral;
+        color: #f1e5ac;
     }
 
     #nav-toggle:checked + #menu {
@@ -357,6 +361,9 @@ body {
 
 /*Media Queries Started*/
 @media (max-width: 576px) {
+    .nav-toggle-label {
+        margin-left: 1em !important;
+    }
     .navbar-section {
         img {
             width: 10rem;
