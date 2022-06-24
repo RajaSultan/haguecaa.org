@@ -246,6 +246,115 @@ body {
     }
 }
 
+/* HEADER */
+#main-header {
+    background: $primary-color;
+    text-align: center;
+    position: fixed; /* sticks to the top of the page, regardless of where you scroll */
+    margin-bottom: 50px;
+    width: 100%;
+    z-index: 999; /* puts itself on top of all other elements on the page */
+    padding: 10px 0;
+}
+
+/* hiding the checkbox */
+.nav-toggle {
+    display: none;
+}
+
+/* STYLING/POSITIONING THE HAMBURGER MENU */
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    margin-left: 2.5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #fff;
+    height: 3px;
+    width: 30px;
+    border-radius: 2px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 10px;
+}
+.nav-toggle-label span::after {
+    top: 10px;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label span {
+    background: #333; /* setting it to the same background as header so it "disappears" */
+}
+
+/* transforming the before and after span into an X */
+#nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(45deg);
+    bottom: 0;
+    background: #fff;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    background: #fff;
+}
+
+#menu {
+    position: absolute;
+    background: $primary-color;
+    text-align: left;
+    //width: 100%;
+    transform: scale(1, 0);
+    //transform-origin: left; /* menu appears from the top instead if center, try and comment this out and see for yourself */
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+
+#menu li {
+    padding: 20px 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+#menu a:hover {
+    color: coral;
+}
+
+#nav-toggle:checked + #menu {
+    transform: scale(1, 1);
+}
+#nav-toggle:checked ~ #menu a {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out 0.35s;
+}
+
 /*Media Queries Started*/
 @media (max-width: 576px) {
     .navbar-section {
@@ -253,6 +362,9 @@ body {
         img {
             width: 10rem;
         }
+    }
+    .nav-toggle-label {
+        margin-left: 1rem !important;
     }
     .news-section {
         padding: 30px 0;
@@ -276,6 +388,9 @@ body {
 }
 
 @media (min-width: 768px) {
+    .nav-toggle-label {
+        margin-left: 1rem !important;
+    }
     .hague-court-section {
         margin: 60px 0;
         p {

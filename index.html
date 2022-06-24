@@ -12,17 +12,25 @@
     <link href="./CSS/style.css" rel="stylesheet" />
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <meta property="og:image" content="./ASSETS/logo.webp" />
     <meta
       property="og:title"
       content="THE HAGUE COURT OF ARBITRATION FOR AVIATION"
     />
-    <meta property="og:url" content="http://haguecaa.org/" />
+    <meta property="og:url" content="http:/haguecaa.org/" />
     <meta
       property="og:description"
       content="A non-profit and modern specialised court of arbitration and centre for mediation
        for the global aviation industry seated in The Hague, Netherlands."
     />
-    <meta property="og:image" content="./ASSETS/logo.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -34,13 +42,35 @@
     </div>
     <section class="navbar-section">
       <div class="main-logo">
-        <span class="d-flex align-items-center justify-content-center"
-          ><a class="text-center p-2" href="index.html"
-            ><img alt="" src="./ASSETS/main-logo.svg" />
-          </a>
-        </span>
+        <header id="main-header">
+          <div class="container position-relative">
+            <h1 id="logo">
+              <a><img src="./ASSETS/main-logo.svg" alt="" /></a>
+            </h1>
+            <input
+              type="checkbox"
+              id="nav-toggle"
+              class="nav-toggle"
+            /><!-- Using the different states of the checkbox as an activator for the mobile menu - checked and not checked -->
+            <nav id="menu">
+              <ul>
+                <li><a href="#">Arbitration - Coming 18.7.22</a></li>
+                <li><a href="#">Mediation - Coming 18.7.22</a></li>
+                <li><a href="#">About - Coming 18.7.22</a></li>
+                <li><a href="#">News - Coming 18.7.22</a></li>
+              </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span></span>
+            </label>
+          </div>
+        </header>
       </div>
     </section>
+    <!-- Top menu -->
+
+    <!-- continues the page content ... -->
+
     <!-------------------------
        Hero Section Started 
      -------------------------->
@@ -356,7 +386,6 @@
     <div class="news-section mt-lg-5 mt-2 overflow-hidden">
       <div class="container-fluid offset-1">
         <h3 class="mb-md-5 mb-4">LATEST NEWS</h3>
-
         <div class="images-main">
           <img alt="" src="./ASSETS/7.webp" loading="lazy" />
         </div>
@@ -368,9 +397,11 @@
             data-aos-duration="1000"
             data-aos-easing="linear"
           >
+            <i class="fa-solid fa-plane"></i>
             The Hague CAA press conference taking place at The Farnborough
             International Airshow on Wednesday 20 July 2022&hellip;
           </p>
+
           &nbsp;
 
           <p
@@ -379,6 +410,7 @@
             data-aos-duration="1200"
             data-aos-easing="linear"
           >
+            <i class="fa-solid fa-plane"></i>
             Official opening of The Hague CAA taking place in The Hague on
             Thursday 21 July 2022&hellip;
           </p>
@@ -390,6 +422,7 @@
             data-aos-duration="1500"
             data-aos-easing="linear"
           >
+            <i class="fa-solid fa-plane"></i>
             Full website of The Hague CAA - including 2022 rules, forms, fees
             and model clause &ndash; launches on Friday 22 July 2022&hellip;
           </p>
@@ -459,6 +492,7 @@
     <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
     <script src="./JS/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
