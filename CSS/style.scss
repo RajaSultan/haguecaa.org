@@ -80,31 +80,31 @@ body {
         height: 100%;
         display: flex;
         align-items: center;
-    }
 
-    .nav-toggle-label span,
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
-        display: block;
-        background: #f1e5ac;
-        height: 1.5px;
-        width: 30px;
-        border-radius: 2px;
-        position: relative;
-        transition: all 0.5s ease-in-out;
-    }
+        span,
+        span::before,
+        span::after {
+            display: block;
+            background: #f1e5ac;
+            height: 1.5px;
+            width: 30px;
+            border-radius: 2px;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+        }
 
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
-        content: "";
-        position: absolute;
-    }
+        span::before,
+        span::after {
+            content: "";
+            position: absolute;
+        }
 
-    .nav-toggle-label span::before {
-        bottom: 10px;
-    }
-    .nav-toggle-label span::after {
-        top: 10px;
+        span::before {
+            bottom: 10px;
+        }
+        span::after {
+            top: 10px;
+        }
     }
 
     #nav-toggle:checked ~ .nav-toggle-label span {
@@ -134,30 +134,29 @@ body {
         margin-left: -15px;
         transform-origin: left center;
         transition: all 0.5s ease-in-out !important;
-    }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: start;
+        }
 
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        text-align: start;
-    }
+        li {
+            padding: 20px 30px;
+        }
 
-    .menu li {
-        padding: 20px 30px;
-    }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            opacity: 0;
+            transition: opacity 0.15s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
 
-    .menu a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        text-transform: uppercase;
-        opacity: 0;
-        transition: opacity 0.15s ease-in-out;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .menu a:hover {
-        color: #f1e5ac;
+        a:hover {
+            color: #f1e5ac;
+        }
     }
 
     #nav-toggle:checked + .menu {
