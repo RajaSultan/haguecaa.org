@@ -123,6 +123,13 @@ body {
         top: 0;
         background: #fff;
     }
+    #nav-toggle:checked + .menu {
+        transform: scale(1, 1);
+    }
+    #nav-toggle:checked ~ .menu a {
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out 0.35s;
+    }
 
     .menu {
         position: absolute;
@@ -157,14 +164,6 @@ body {
         a:hover {
             color: #f1e5ac;
         }
-    }
-
-    #nav-toggle:checked + .menu {
-        transform: scale(1, 1);
-    }
-    #nav-toggle:checked ~ .menu a {
-        opacity: 1;
-        transition: opacity 0.25s ease-in-out 0.35s;
     }
 }
 
