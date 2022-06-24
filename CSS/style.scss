@@ -46,7 +46,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 9;
+    z-index: -9;
 }
 
 /*Navbar Section*/
@@ -241,7 +241,7 @@ body {
 .footer-section {
     background: $primary-color;
     img {
-        width: 25rem;
+        width: 20rem;
     }
 }
 
