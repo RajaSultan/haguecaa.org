@@ -134,29 +134,30 @@ body {
         margin-left: -15px;
         transform-origin: left center;
         transition: all 0.5s ease-in-out !important;
-        ul {
-            list-style: none;
-            padding: 0;
-            text-align: start;
-        }
+    }
 
-        li {
-            padding: 20px 30px;
-        }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        text-align: start;
+    }
 
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            text-transform: uppercase;
-            opacity: 0;
-            transition: opacity 0.15s ease-in-out;
-            transition: all 0.5s ease-in-out;
-        }
+    .menu li {
+        padding: 20px 30px;
+    }
 
-        a:hover {
-            color: #f1e5ac;
-        }
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu a:hover {
+        color: #f1e5ac;
     }
 
     #nav-toggle:checked + .menu {
