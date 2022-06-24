@@ -63,17 +63,17 @@ body {
   /* transforming the before and after span into an X */
 }
 
-.main-header img {
+.main-header .logo img {
   width: 12rem;
+}
+
+.main-header .logo .email {
+  color: #f1e5ac;
+  font-weight: 100;
 }
 
 .main-header .nav-toggle {
   display: none;
-}
-
-.main-header .email {
-  color: #f1e5ac;
-  font-weight: 100;
 }
 
 .main-header .nav-toggle-label {
