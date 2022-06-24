@@ -130,12 +130,12 @@ body {
         position: absolute;
         background: $primary-color;
         text-align: left;
-
         // width: 20%;
-        transform: scale(1, 0);
+        height: 100vh;
+        transform: scaleX(-0.05);
         margin-left: -15px;
-        transform-origin: top right !important; /* menu appears from the top instead if center, try and comment this out and see for yourself */
-        transition: transform 0.4s ease-in-out;
+        transform-origin: left center;
+        transition: all 0.5s ease-in-out !important;
     }
 
     #menu ul {

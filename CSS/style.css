@@ -139,16 +139,14 @@ body {
   position: absolute;
   background: #052645;
   text-align: left;
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
+  height: 100vh;
+  -webkit-transform: scaleX(-0.05);
+          transform: scaleX(-0.05);
   margin-left: -15px;
-  -webkit-transform-origin: top right !important;
-          transform-origin: top right !important;
-  /* menu appears from the top instead if center, try and comment this out and see for yourself */
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
 }
 
 #main-header #menu ul {
