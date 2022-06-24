@@ -47,11 +47,8 @@ body {
 }
 
 /*Navbar Section*/
-.navbar-section {
-  /* HEADER */
-}
-
-.navbar-section #main-header {
+/* HEADER */
+.main-header {
   background: #052645;
   text-align: center;
   position: fixed;
@@ -66,16 +63,20 @@ body {
   /* transforming the before and after span into an X */
 }
 
-.navbar-section #main-header .nav-toggle {
+.main-header img {
+  width: 12rem;
+}
+
+.main-header .nav-toggle {
   display: none;
 }
 
-.navbar-section #main-header .email {
+.main-header .email {
   color: #f1e5ac;
   font-weight: 100;
 }
 
-.navbar-section #main-header .nav-toggle-label {
+.main-header .nav-toggle-label {
   position: absolute;
   top: 0;
   margin-left: 4em;
@@ -88,9 +89,9 @@ body {
           align-items: center;
 }
 
-.navbar-section #main-header .nav-toggle-label span,
-.navbar-section #main-header .nav-toggle-label span::before,
-.navbar-section #main-header .nav-toggle-label span::after {
+.main-header .nav-toggle-label span,
+.main-header .nav-toggle-label span::before,
+.main-header .nav-toggle-label span::after {
   display: block;
   background: #f1e5ac;
   height: 1.5px;
@@ -101,40 +102,40 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.navbar-section #main-header .nav-toggle-label span::before,
-.navbar-section #main-header .nav-toggle-label span::after {
+.main-header .nav-toggle-label span::before,
+.main-header .nav-toggle-label span::after {
   content: "";
   position: absolute;
 }
 
-.navbar-section #main-header .nav-toggle-label span::before {
+.main-header .nav-toggle-label span::before {
   bottom: 10px;
 }
 
-.navbar-section #main-header .nav-toggle-label span::after {
+.main-header .nav-toggle-label span::after {
   top: 10px;
 }
 
-.navbar-section #main-header #nav-toggle:checked ~ .nav-toggle-label span {
+.main-header #nav-toggle:checked ~ .nav-toggle-label span {
   background: #333;
   /* setting it to the same background as header so it "disappears" */
 }
 
-.navbar-section #main-header #nav-toggle:checked ~ .nav-toggle-label span::before {
+.main-header #nav-toggle:checked ~ .nav-toggle-label span::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   bottom: 0;
   background: #fff;
 }
 
-.navbar-section #main-header #nav-toggle:checked ~ .nav-toggle-label span::after {
+.main-header #nav-toggle:checked ~ .nav-toggle-label span::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 0;
   background: #fff;
 }
 
-.navbar-section #main-header #menu {
+.main-header .menu {
   position: absolute;
   background: #052645;
   text-align: left;
@@ -148,17 +149,17 @@ body {
   transition: all 0.5s ease-in-out !important;
 }
 
-.navbar-section #main-header #menu ul {
+.main-header .menu ul {
   list-style: none;
   padding: 0;
   text-align: start;
 }
 
-.navbar-section #main-header #menu li {
+.main-header .menu li {
   padding: 20px 30px;
 }
 
-.navbar-section #main-header #menu a {
+.main-header .menu a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
@@ -170,23 +171,19 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.navbar-section #main-header #menu a:hover {
+.main-header .menu a:hover {
   color: #f1e5ac;
 }
 
-.navbar-section #main-header #nav-toggle:checked + #menu {
+.main-header #nav-toggle:checked + .menu {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-.navbar-section #main-header #nav-toggle:checked ~ #menu a {
+.main-header #nav-toggle:checked ~ .menu a {
   opacity: 1;
   -webkit-transition: opacity 0.25s ease-in-out 0.35s;
   transition: opacity 0.25s ease-in-out 0.35s;
-}
-
-.navbar-section img {
-  width: 12rem;
 }
 
 /*hague-court Section*/
