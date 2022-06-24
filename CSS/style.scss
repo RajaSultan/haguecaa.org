@@ -75,7 +75,7 @@ body {
     .nav-toggle-label {
         position: absolute;
         top: 0;
-        margin-left: 1em !important;
+        margin-left: 1em;
         height: 100%;
         display: flex;
         align-items: center;
@@ -86,7 +86,7 @@ body {
     .nav-toggle-label span::after {
         display: block;
         background: #fff;
-        height: 3px;
+        height: 1.5px;
         width: 30px;
         border-radius: 2px;
         position: relative;
@@ -127,9 +127,10 @@ body {
         position: absolute;
         background: $primary-color;
         text-align: left;
-        //width: 100%;
+        // width: 20%;
         transform: scale(1, 0);
-        //transform-origin: left; /* menu appears from the top instead if center, try and comment this out and see for yourself */
+        margin-left: -15px;
+        transform-origin: top !important; /* menu appears from the top instead if center, try and comment this out and see for yourself */
         transition: transform 0.4s ease-in-out;
     }
 
@@ -361,9 +362,7 @@ body {
             width: 10rem;
         }
     }
-    .nav-toggle-label {
-        margin-left: 1rem !important;
-    }
+
     .news-section {
         padding: 30px 0;
     }
@@ -389,9 +388,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    .nav-toggle-label {
-        margin-left: 1rem !important;
-    }
     .hero-section .video-row {
         margin-top: 100px;
     }
