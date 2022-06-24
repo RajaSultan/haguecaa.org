@@ -48,10 +48,6 @@ body {
 }
 
 /*Navbar Section*/
-.navbar-section {
-  background: #052645;
-}
-
 .navbar-section img {
   width: 12rem;
 }
@@ -288,7 +284,7 @@ body {
 #main-header .nav-toggle-label {
   position: absolute;
   top: 0;
-  margin-left: 2.5em;
+  margin-left: 3em !important;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,9 +389,6 @@ body {
 
 /*Media Queries Started*/
 @media (max-width: 576px) {
-  .navbar-section {
-    background: #052645;
-  }
   .navbar-section img {
     width: 10rem;
   }

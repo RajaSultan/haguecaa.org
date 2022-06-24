@@ -51,7 +51,6 @@ body {
 
 /*Navbar Section*/
 .navbar-section {
-    background: $primary-color;
     img {
         width: 12rem;
     }
@@ -265,7 +264,7 @@ body {
     .nav-toggle-label {
         position: absolute;
         top: 0;
-        margin-left: 2.5em;
+        margin-left: 3em !important;
         height: 100%;
         display: flex;
         align-items: center;
@@ -358,7 +357,6 @@ body {
 /*Media Queries Started*/
 @media (max-width: 576px) {
     .navbar-section {
-        background: $primary-color;
         img {
             width: 10rem;
         }
