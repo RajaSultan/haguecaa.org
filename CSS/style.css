@@ -58,25 +58,24 @@ body {
   z-index: 999;
   /* puts itself on top of all other elements on the page */
   padding: 10px 0;
-  /* hiding the checkbox */
-  /* STYLING/POSITIONING THE HAMBURGER MENU */
-  /* transforming the before and after span into an X */
 }
 
-.main-header .logo img {
+.logo img {
   width: 12rem;
 }
 
-.main-header .logo .email {
+.logo .email {
   -webkit-text-stroke: 0.6px #f1e5ac;
   color: transparent;
 }
 
-.main-header #nav-toggle {
+/* hiding the checkbox */
+#nav-toggle {
   display: none;
 }
 
-.main-header .nav-toggle-label {
+/* STYLING/POSITIONING THE HAMBURGER MENU */
+.nav-toggle-label {
   position: absolute;
   top: 0;
   margin-left: 4em;
@@ -89,9 +88,9 @@ body {
           align-items: center;
 }
 
-.main-header .nav-toggle-label span,
-.main-header .nav-toggle-label span::before,
-.main-header .nav-toggle-label span::after {
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
   display: block;
   background: #f1e5ac;
   height: 1px;
@@ -102,29 +101,29 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.main-header .nav-toggle-label span::before,
-.main-header .nav-toggle-label span::after {
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
   content: "";
   position: absolute;
 }
 
-.main-header .nav-toggle-label span::before {
+.nav-toggle-label span::before {
   bottom: 10px;
 }
 
-.main-header .nav-toggle-label span::before {
+.nav-toggle-label span::before {
   right: 10px;
 }
 
-.main-header .nav-toggle-label span::after {
+.nav-toggle-label span::after {
   top: 10px;
 }
 
-.main-header .nav-toggle-label span::after {
+.nav-toggle-label span::after {
   right: 10px;
 }
 
-.main-header .menu {
+.menu {
   position: absolute;
   background: #052645;
   text-align: left;
@@ -138,17 +137,17 @@ body {
   transition: all 0.5s ease-in-out !important;
 }
 
-.main-header .menu ul {
+.menu ul {
   list-style: none;
   padding: 0;
   text-align: start;
 }
 
-.main-header .menu li {
+.menu li {
   padding: 20px 30px;
 }
 
-.main-header .menu a {
+.menu a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
@@ -160,35 +159,36 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.main-header .menu a:hover {
+.menu a:hover {
   color: #f1e5ac;
 }
 
-.main-header #nav-toggle:checked ~ .nav-toggle-label span {
+#nav-toggle:checked ~ .nav-toggle-label span {
   background: #333;
   /* setting it to the same background as header so it "disappears" */
 }
 
-.main-header #nav-toggle:checked ~ .nav-toggle-label span::before {
+/* transforming the before and after span into an X */
+#nav-toggle:checked ~ .nav-toggle-label span::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   bottom: 0;
   background: #f1e5ac;
 }
 
-.main-header #nav-toggle:checked ~ .nav-toggle-label span::after {
+#nav-toggle:checked ~ .nav-toggle-label span::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 0;
   background: #f1e5ac;
 }
 
-.main-header #nav-toggle:checked + .menu {
+#nav-toggle:checked + .menu {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-.main-header #nav-toggle:checked ~ .menu a {
+#nav-toggle:checked ~ .menu a {
   opacity: 1;
   -webkit-transition: opacity 0.25s ease-in-out 0.35s;
   transition: opacity 0.25s ease-in-out 0.35s;
