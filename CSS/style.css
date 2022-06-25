@@ -68,12 +68,12 @@ body {
 }
 
 .main-header .logo .email {
-  color: #f1e5ac;
-  font-weight: 100;
+  -webkit-text-stroke: 0.6px #f1e5ac;
+  color: transparent;
 }
 
 .main-header .nav-toggle {
-  display: none;
+  display: none !important;
 }
 
 .main-header .nav-toggle-label {
@@ -94,7 +94,7 @@ body {
 .main-header .nav-toggle-label span::after {
   display: block;
   background: #f1e5ac;
-  height: 1.5px;
+  height: 1px;
   width: 30px;
   border-radius: 2px;
   position: relative;
@@ -112,8 +112,16 @@ body {
   bottom: 10px;
 }
 
+.main-header .nav-toggle-label span::before {
+  right: 10px;
+}
+
 .main-header .nav-toggle-label span::after {
   top: 10px;
+}
+
+.main-header .nav-toggle-label span::after {
+  right: 10px;
 }
 
 .main-header #nav-toggle:checked ~ .nav-toggle-label span {
@@ -343,7 +351,7 @@ body {
 .founder {
   background: url("../ASSETS/ceo.jpeg") no-repeat center center fixed;
   display: table;
-  height: 70%;
+  height: 75%;
   position: relative;
   width: 100%;
   background-size: cover;
@@ -416,7 +424,7 @@ body {
     padding: 0 30px !important;
   }
   .founder {
-    height: 75%;
+    height: 75% !important;
   }
   .footer-section img {
     width: 10rem !important;
