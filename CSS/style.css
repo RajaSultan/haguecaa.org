@@ -64,7 +64,7 @@ body {
 }
 
 .main-header .logo img {
-  width: 16rem;
+  width: 12rem;
 }
 
 .main-header .logo .email {
@@ -408,8 +408,11 @@ body {
   .nav-toggle-label {
     margin-left: 1em !important;
   }
-  .logo img {
-    width: 15rem !important;
+  .navbar-section img {
+    width: 10rem;
+  }
+  .menu {
+    height: auto !important;
   }
   .news-section {
     padding: 30px 0;
