@@ -124,36 +124,6 @@ body {
   right: 10px;
 }
 
-.main-header #nav-toggle:checked ~ .nav-toggle-label span {
-  background: #333;
-  /* setting it to the same background as header so it "disappears" */
-}
-
-.main-header #nav-toggle:checked ~ .nav-toggle-label span::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  bottom: 0;
-  background: #f1e5ac;
-}
-
-.main-header #nav-toggle:checked ~ .nav-toggle-label span::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 0;
-  background: #f1e5ac;
-}
-
-.main-header #nav-toggle:checked + .menu {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-}
-
-.main-header #nav-toggle:checked ~ .menu a {
-  opacity: 1;
-  -webkit-transition: opacity 0.25s ease-in-out 0.35s;
-  transition: opacity 0.25s ease-in-out 0.35s;
-}
-
 .main-header .menu {
   position: absolute;
   background: #052645;
@@ -192,6 +162,36 @@ body {
 
 .main-header .menu a:hover {
   color: #f1e5ac;
+}
+
+.main-header #nav-toggle:checked ~ .nav-toggle-label span {
+  background: #333;
+  /* setting it to the same background as header so it "disappears" */
+}
+
+.main-header #nav-toggle:checked ~ .nav-toggle-label span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 0;
+  background: #f1e5ac;
+}
+
+.main-header #nav-toggle:checked ~ .nav-toggle-label span::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  background: #f1e5ac;
+}
+
+.main-header #nav-toggle:checked + .menu {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.main-header #nav-toggle:checked ~ .menu a {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out 0.35s;
+  transition: opacity 0.25s ease-in-out 0.35s;
 }
 
 /*hague-court Section*/
