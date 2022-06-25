@@ -72,7 +72,7 @@ body {
   color: transparent;
 }
 
-.main-header .nav-toggle {
+.main-header #nav-toggle {
   display: none !important;
 }
 
