@@ -124,13 +124,13 @@ body {
     #nav-toggle:checked ~ .nav-toggle-label span::before {
         transform: rotate(45deg);
         bottom: 0;
-        background: #fff;
+        background: #f1e5ac;
     }
 
     #nav-toggle:checked ~ .nav-toggle-label span::after {
         transform: rotate(-45deg);
         top: 0;
-        background: #fff;
+        background: #f1e5ac;
     }
     #nav-toggle:checked + .menu {
         transform: scale(1, 1);

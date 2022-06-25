@@ -133,14 +133,14 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   bottom: 0;
-  background: #fff;
+  background: #f1e5ac;
 }
 
 .main-header #nav-toggle:checked ~ .nav-toggle-label span::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 0;
-  background: #fff;
+  background: #f1e5ac;
 }
 
 .main-header #nav-toggle:checked + .menu {
