@@ -332,6 +332,9 @@ body {
     background: $primary-color;
     .card-title {
         font-size: 18px;
+        line-height: 1.5;
+        font-weight: normal;
+        font-style: normal;
     }
     .card-text {
         font-size: 15px;
@@ -346,6 +349,16 @@ body {
         line-height: 1.5;
         font-weight: normal;
         font-style: normal;
+    }
+    .card {
+        overflow: hidden;
+    }
+    img {
+        transition: 0.5s ease-in-out;
+        border-radius: 8px 8px 0 0;
+    }
+    img:hover {
+        transform: scale(1.08);
     }
 }
 
@@ -382,6 +395,10 @@ body {
     background: $primary-color;
     img {
         width: 17rem;
+    }
+    .bottom-footer img {
+        height: 36px;
+        width: 36px;
     }
 }
 

@@ -369,6 +369,9 @@ body {
 
 .explore-further .card-title {
   font-size: 18px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .explore-further .card-text {
@@ -387,6 +390,21 @@ body {
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
+}
+
+.explore-further .card {
+  overflow: hidden;
+}
+
+.explore-further img {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 8px 8px 0 0;
+}
+
+.explore-further img:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 /* contact sections */
@@ -426,6 +444,11 @@ body {
 
 .footer-section img {
   width: 17rem;
+}
+
+.footer-section .bottom-footer img {
+  height: 36px;
+  width: 36px;
 }
 
 /*Media Queries Started*/
