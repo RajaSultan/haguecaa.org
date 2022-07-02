@@ -328,11 +328,33 @@ body {
     }
 }
 
+.explore-further {
+    background: $primary-color;
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    a:hover {
+        color: #f1e5ac !important;
+        border-color: #f1e5ac !important;
+        transition: all 0.5s ease-in-out;
+    }
+    h3 {
+        line-height: 1.5;
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
 /* contact sections */
 .contact-section {
     .bottom-video {
         position: relative;
     }
+
     .center-button {
         position: absolute;
         top: 50%;
@@ -359,7 +381,7 @@ body {
 .footer-section {
     background: $primary-color;
     img {
-        width: 20rem;
+        width: 17rem;
     }
 }
 

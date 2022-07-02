@@ -363,6 +363,32 @@ body {
   font-style: italic;
 }
 
+.explore-further {
+  background: #052645;
+}
+
+.explore-further .card-title {
+  font-size: 18px;
+}
+
+.explore-further .card-text {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.explore-further a:hover {
+  color: #f1e5ac !important;
+  border-color: #f1e5ac !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.explore-further h3 {
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* contact sections */
 .contact-section .bottom-video {
   position: relative;
@@ -399,7 +425,7 @@ body {
 }
 
 .footer-section img {
-  width: 20rem;
+  width: 17rem;
 }
 
 /*Media Queries Started*/
