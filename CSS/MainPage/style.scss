@@ -23,6 +23,10 @@ body {
     box-sizing: border-box;
 }
 
+.text-primary-main {
+    color: $primary-color !important;
+}
+
 .fa-plane {
     color: $primary-color;
 }
@@ -34,7 +38,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    background: url("../VIDEO/pre-loader.gif") no-repeat center center;
+    background: url("../../VIDEO/pre-loader.gif") no-repeat center center;
     right: 0;
     margin: auto;
 }
@@ -49,6 +53,11 @@ body {
 }
 
 /*Navbar Section*/
+.navbar-section {
+    position: fixed;
+    width: 100%;
+    z-index: 99 !important;
+}
 
 /* HEADER */
 .main-header {
@@ -290,7 +299,7 @@ body {
 
 /* home sections */
 .home {
-    background: url("../ASSETS/numb.jpeg") no-repeat center center fixed;
+    background: url("../../ASSETS/numb.jpeg") no-repeat center center fixed;
     display: table;
     height: 70%;
     position: relative;
@@ -314,7 +323,7 @@ body {
 
 /* founder sections */
 .founder {
-    background: url("../ASSETS/ceo.jpeg") no-repeat center center fixed;
+    background: url("../../ASSETS/ceo.jpeg") no-repeat center center fixed;
     display: table;
     height: 75%;
     position: relative;
@@ -329,22 +338,32 @@ body {
 }
 
 .explore-further {
-    background: $primary-color;
     .card-title {
         font-size: 18px;
         line-height: 1.5;
         font-weight: normal;
         font-style: normal;
+        color: $primary-color !important;
     }
     .card-text {
         font-size: 15px;
         line-height: 22px;
+        color: $primary-color !important;
+    }
+
+    .card-body {
+        border-color: $primary-color !important;
+    }
+    a {
+        border-color: $primary-color !important;
+        color: $primary-color !important;
+        transition: all 0.7s ease-in-out;
     }
     a:hover {
-        color: #f1e5ac !important;
-        border-color: #f1e5ac !important;
-        transition: all 0.5s ease-in-out;
+        background: $primary-color !important;
+        color: #fff !important;
     }
+
     h3 {
         line-height: 1.5;
         font-weight: normal;
@@ -352,6 +371,8 @@ body {
     }
     .card {
         overflow: hidden;
+        border-color: #fff;
+        border-radius: 10px !important;
     }
     img {
         transition: 0.5s ease-in-out;
@@ -417,6 +438,12 @@ body {
         height: auto !important;
     }
 
+    .hero-section {
+        .video-row {
+            margin-top: 80px;
+        }
+    }
+
     .news-section {
         padding: 30px 0;
     }
@@ -439,6 +466,12 @@ body {
 }
 
 @media (min-width: 768px) {
+    .hero-section {
+        .video-row {
+            margin-top: 80px;
+        }
+    }
+
     .hague-court-section {
         margin: 60px 0;
         p {
@@ -447,6 +480,12 @@ body {
     }
 }
 @media (min-width: 992px) {
+    .hero-section {
+        .video-row {
+            margin-top: 80px;
+        }
+    }
+
     .hague-court-section {
         margin: 120px 0;
         p {
@@ -456,6 +495,12 @@ body {
 }
 
 @media (min-width: 1200px) {
+    .hero-section {
+        .video-row {
+            margin-top: 80px;
+        }
+    }
+
     .hague-court-section {
         margin: 120px 0;
         p {

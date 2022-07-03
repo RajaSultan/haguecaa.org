@@ -1,0 +1,162 @@
+/*Main Color Variables*/
+$primary-color: #052645;
+$secondary-color: #f8f7f7;
+
+/*Font Family*/
+@font-face {
+    font-family: Lato;
+    src: url(../FONTS/Lato-ExtraLight.ttf);
+}
+
+/* general styles */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: Lato;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navbar Section*/
+
+/* HEADER */
+.main-header {
+    background: $primary-color;
+    text-align: center;
+    position: fixed; /* sticks to the top of the page, regardless of where you scroll */
+    width: 100%;
+    z-index: 999; /* puts itself on top of all other elements on the page */
+    padding: 10px 0;
+}
+
+.logo {
+    img {
+        width: 12rem;
+    }
+    .email {
+        -webkit-text-stroke: 0.6px #f1e5ac;
+        color: transparent;
+    }
+}
+
+/* hiding the checkbox */
+#nav-toggle {
+    display: none;
+}
+
+/* STYLING/POSITIONING THE HAMBURGER MENU */
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    margin-left: 4em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    span,
+    span::before,
+    span::after {
+        display: block;
+        background: #f1e5ac;
+        height: 1px;
+        width: 30px;
+        border-radius: 2px;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
+
+    span::before,
+    span::after {
+        content: "";
+        position: absolute;
+    }
+
+    span::before {
+        bottom: 10px;
+    }
+    span::before {
+        right: 10px;
+    }
+    span::after {
+        top: 10px;
+    }
+    span::after {
+        right: 10px;
+    }
+}
+
+.menu {
+    position: absolute;
+    background: $primary-color;
+    text-align: left;
+    // width: 20%;
+    height: 100vh;
+    transform: scaleX(-0.05);
+    margin-left: -15px;
+    transform-origin: left center;
+    transition: all 0.5s ease-in-out !important;
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: start;
+    }
+
+    li {
+        padding: 20px 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    a:hover {
+        color: #f1e5ac;
+    }
+}
+#nav-toggle:checked ~ .nav-toggle-label span {
+    background: #333; /* setting it to the same background as header so it "disappears" */
+}
+
+/* transforming the before and after span into an X */
+#nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(45deg);
+    bottom: 0;
+    background: #f1e5ac;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    background: #f1e5ac;
+}
+#nav-toggle:checked + .menu {
+    transform: scale(1, 1);
+}
+#nav-toggle:checked ~ .menu a {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out 0.35s;
+}
+
+/* footer sections */
+.footer-section {
+    background: $primary-color;
+    img {
+        width: 17rem;
+    }
+    .bottom-footer img {
+        height: 36px;
+        width: 36px;
+    }
+}

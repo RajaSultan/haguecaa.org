@@ -21,6 +21,10 @@ body {
           box-sizing: border-box;
 }
 
+.text-primary-main {
+  color: #052645 !important;
+}
+
 .fa-plane {
   color: #052645;
 }
@@ -32,7 +36,7 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  background: url("../VIDEO/pre-loader.gif") no-repeat center center;
+  background: url("../../VIDEO/pre-loader.gif") no-repeat center center;
   right: 0;
   margin: auto;
 }
@@ -47,6 +51,12 @@ body {
 }
 
 /*Navbar Section*/
+.navbar-section {
+  position: fixed;
+  width: 100%;
+  z-index: 99 !important;
+}
+
 /* HEADER */
 .main-header {
   background: #052645;
@@ -322,7 +332,7 @@ body {
 
 /* home sections */
 .home {
-  background: url("../ASSETS/numb.jpeg") no-repeat center center fixed;
+  background: url("../../ASSETS/numb.jpeg") no-repeat center center fixed;
   display: table;
   height: 70%;
   position: relative;
@@ -348,7 +358,7 @@ body {
 
 /* founder sections */
 .founder {
-  background: url("../ASSETS/ceo.jpeg") no-repeat center center fixed;
+  background: url("../../ASSETS/ceo.jpeg") no-repeat center center fixed;
   display: table;
   height: 75%;
   position: relative;
@@ -363,27 +373,34 @@ body {
   font-style: italic;
 }
 
-.explore-further {
-  background: #052645;
-}
-
 .explore-further .card-title {
   font-size: 18px;
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
+  color: #052645 !important;
 }
 
 .explore-further .card-text {
   font-size: 15px;
   line-height: 22px;
+  color: #052645 !important;
+}
+
+.explore-further .card-body {
+  border-color: #052645 !important;
+}
+
+.explore-further a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .explore-further a:hover {
-  color: #f1e5ac !important;
-  border-color: #f1e5ac !important;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  background: #052645 !important;
+  color: #fff !important;
 }
 
 .explore-further h3 {
@@ -394,6 +411,8 @@ body {
 
 .explore-further .card {
   overflow: hidden;
+  border-color: #fff;
+  border-radius: 10px !important;
 }
 
 .explore-further img {
@@ -462,6 +481,9 @@ body {
   .menu {
     height: auto !important;
   }
+  .hero-section .video-row {
+    margin-top: 80px;
+  }
   .news-section {
     padding: 30px 0;
   }
@@ -480,6 +502,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .hero-section .video-row {
+    margin-top: 80px;
+  }
   .hague-court-section {
     margin: 60px 0;
   }
@@ -489,6 +514,9 @@ body {
 }
 
 @media (min-width: 992px) {
+  .hero-section .video-row {
+    margin-top: 80px;
+  }
   .hague-court-section {
     margin: 120px 0;
   }
@@ -498,6 +526,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .hero-section .video-row {
+    margin-top: 80px;
+  }
   .hague-court-section {
     margin: 120px 0;
   }
