@@ -428,6 +428,10 @@ body {
   opacity: 0.6;
 }
 
+.explore-further .card-title {
+  font-weight: 400;
+}
+
 /* contact sections */
 .contact-section .bottom-video {
   position: relative;
@@ -468,11 +472,11 @@ body {
 }
 
 .footer-section .bottom-footer img {
-  height: 36px;
-  width: 36px;
+  height: 32px;
+  width: 32px;
 }
 
-.footer-section .footer-text {
+.footer-section .bottom-footer img .footer-text {
   font-weight: 100;
 }
 
@@ -502,7 +506,7 @@ body {
   .founder {
     height: 75% !important;
   }
-  .footer-section img {
+  .footer-section .footer-image img {
     width: 10rem !important;
   }
 }
