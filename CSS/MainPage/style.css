@@ -87,7 +87,7 @@ body {
 .nav-toggle-label {
   position: absolute;
   top: 0;
-  margin-left: 4em;
+  margin-left: 2em;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +173,7 @@ body {
 }
 
 #nav-toggle:checked ~ .nav-toggle-label span {
-  background: #333;
+  background: #052645;
   /* setting it to the same background as header so it "disappears" */
 }
 
@@ -424,6 +424,8 @@ body {
 .explore-further img:hover {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+  filter: alpha(opacity=0.6);
+  opacity: 0.6;
 }
 
 /* contact sections */
@@ -468,6 +470,10 @@ body {
 .footer-section .bottom-footer img {
   height: 36px;
   width: 36px;
+}
+
+.footer-section .footer-text {
+  font-weight: 100;
 }
 
 /*Media Queries Started*/

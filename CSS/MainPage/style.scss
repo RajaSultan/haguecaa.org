@@ -88,7 +88,7 @@ body {
 .nav-toggle-label {
     position: absolute;
     top: 0;
-    margin-left: 4em;
+    margin-left: 2em;
     height: 100%;
     display: flex;
     align-items: center;
@@ -160,7 +160,7 @@ body {
     }
 }
 #nav-toggle:checked ~ .nav-toggle-label span {
-    background: #333; /* setting it to the same background as header so it "disappears" */
+    background: $primary-color; /* setting it to the same background as header so it "disappears" */
 }
 
 /* transforming the before and after span into an X */
@@ -265,6 +265,7 @@ body {
             transform: scale(1.1);
         }
     }
+
     i {
         transform: rotate(-40deg);
     }
@@ -380,6 +381,8 @@ body {
     }
     img:hover {
         transform: scale(1.08);
+        filter: alpha(opacity=0.6);
+        opacity: 0.6;
     }
 }
 
@@ -420,6 +423,9 @@ body {
     .bottom-footer img {
         height: 36px;
         width: 36px;
+    }
+    .footer-text {
+        font-weight: 100;
     }
 }
 

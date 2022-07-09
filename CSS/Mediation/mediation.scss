@@ -127,11 +127,11 @@ body {
     }
 
     a:hover {
-        color: #f1e5ac;
+        color: #f1e5ac !important;
     }
 }
 #nav-toggle:checked ~ .nav-toggle-label span {
-    background: #333; /* setting it to the same background as header so it "disappears" */
+    background: $primary-color; /* setting it to the same background as header so it "disappears" */
 }
 
 /* transforming the before and after span into an X */
@@ -359,6 +359,9 @@ body {
 /* Start Footer Styles */
 
 @media (max-width: 576px) {
+    .menu {
+        height: auto !important;
+    }
     .navbar .nav-menu li .dot::before {
         right: -30px;
     }

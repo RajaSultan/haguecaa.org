@@ -140,11 +140,11 @@ body {
 }
 
 .menu a:hover {
-  color: #f1e5ac;
+  color: #f1e5ac !important;
 }
 
 #nav-toggle:checked ~ .nav-toggle-label span {
-  background: #333;
+  background: #052645;
   /* setting it to the same background as header so it "disappears" */
 }
 
@@ -413,6 +413,9 @@ body {
 /* End Contact Styles */
 /* Start Footer Styles */
 @media (max-width: 576px) {
+  .menu {
+    height: auto !important;
+  }
   .navbar .nav-menu li .dot::before {
     right: -30px;
   }
