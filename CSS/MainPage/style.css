@@ -29,19 +29,14 @@ body {
   color: #052645;
 }
 
-#spinner.lazy {
-  background-image: none;
-  background: none;
-}
-
-#spinner {
+.spinner {
   width: 280px;
   height: 280px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  background: url("../../VIDEO/pre-loader.gif") no-repeat center center !important;
+  background: url("../../VIDEO/pre-loader.gif") no-repeat center center;
   right: 0;
   margin: auto;
 }
