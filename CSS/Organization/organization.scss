@@ -270,21 +270,16 @@ body {
 
 /* End About Styles */
 .linkedin-img {
-    svg {
-        width: 36px;
-        height: 36px;
+    img {
+        width: 30px;
+        height: 30px;
     }
 }
 
-/* Start Services Styles */
-
-/* End Services Styles */
-
-/* Start Testimonials Styles */
-#test,
-#test .content-wrapper {
-    min-height: 400px;
+.card-body {
+    padding: 0 !important;
 }
+
 /* End Testimonials Styles */
 
 .nav-label {
@@ -300,19 +295,7 @@ body {
 }
 
 /* Start Contact Styles */
-#contact {
-    min-height: 600px;
-}
-#contact .content-wrapper {
-    min-height: 600px;
-}
-#contact p {
-    color: #eee;
-}
-#contact .mail {
-    font-size: 30px;
-    margin-top: 40px;
-}
+
 /* End Contact Styles */
 
 /* Start Footer Styles */
