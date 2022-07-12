@@ -288,11 +288,18 @@ body {
     display: block;
 }
 
-/* Start Contact Styles */
-
-/* End Contact Styles */
-
-/* Start Footer Styles */
+.articles-section {
+    a {
+        border-color: $primary-color !important;
+        color: $primary-color !important;
+        transition: all 0.7s ease-in-out;
+        padding: 8px 25px;
+    }
+    a:hover {
+        background: $primary-color !important;
+        color: #fff !important;
+    }
+}
 
 @media (max-width: 576px) {
     .menu {

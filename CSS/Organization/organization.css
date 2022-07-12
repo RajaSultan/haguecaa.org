@@ -327,9 +327,19 @@ body {
   display: block;
 }
 
-/* Start Contact Styles */
-/* End Contact Styles */
-/* Start Footer Styles */
+.articles-section a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  padding: 8px 25px;
+}
+
+.articles-section a:hover {
+  background: #052645 !important;
+  color: #fff !important;
+}
+
 @media (max-width: 576px) {
   .menu {
     height: auto !important;
