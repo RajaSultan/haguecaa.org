@@ -178,6 +178,7 @@ body {
   margin-top: 120px;
   text-align: center;
   padding: 0;
+  font-size: calc(1.3rem + 0.6vw);
 }
 
 #introduction .content-wrapper .para-1 {
@@ -378,7 +379,7 @@ body {
 }
 
 .wrapper-rules p {
-  text-align: center;
+  text-align: center !important;
 }
 
 .wrapper-costs p {
