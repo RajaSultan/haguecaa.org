@@ -308,6 +308,45 @@ body {
   height: 30px;
 }
 
+#clauses a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  padding: 8px 25px;
+}
+
+#clauses a:hover {
+  background: #052645 !important;
+  color: #fff !important;
+}
+
+#admin a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  padding: 8px 25px;
+}
+
+#admin a:hover {
+  background: #052645 !important;
+  color: #fff !important;
+}
+
+#request a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  padding: 8px 25px;
+}
+
+#request a:hover {
+  background: #052645 !important;
+  color: #fff !important;
+}
+
 .card-body {
   padding: 0 !important;
 }
@@ -338,6 +377,14 @@ body {
   color: #fff !important;
 }
 
+.wrapper-rules p {
+  text-align: center;
+}
+
+.wrapper-costs p {
+  text-align: center;
+}
+
 /* footer sections */
 .footer-section {
   background: #052645;
@@ -356,6 +403,12 @@ body {
   .main-heading {
     font-size: 17px;
     text-align: justify;
+  }
+  .wrapper-rules p {
+    text-align: justify !important;
+  }
+  .wrapper-costs p {
+    text-align: justify !important;
   }
   .menu {
     height: auto !important;

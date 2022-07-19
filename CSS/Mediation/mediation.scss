@@ -175,6 +175,7 @@ body {
         text-align: justify;
     }
 }
+
 /* End Global Styles */
 
 /* Start Nav Styles */
@@ -273,6 +274,44 @@ body {
     }
 }
 
+#clauses {
+    a {
+        border-color: $primary-color !important;
+        color: $primary-color !important;
+        transition: all 0.7s ease-in-out;
+        padding: 8px 25px;
+    }
+    a:hover {
+        background: $primary-color !important;
+        color: #fff !important;
+    }
+}
+#admin {
+    a {
+        border-color: $primary-color !important;
+        color: $primary-color !important;
+        transition: all 0.7s ease-in-out;
+        padding: 8px 25px;
+    }
+    a:hover {
+        background: $primary-color !important;
+        color: #fff !important;
+    }
+}
+
+#request {
+    a {
+        border-color: $primary-color !important;
+        color: $primary-color !important;
+        transition: all 0.7s ease-in-out;
+        padding: 8px 25px;
+    }
+    a:hover {
+        background: $primary-color !important;
+        color: #fff !important;
+    }
+}
+
 .card-body {
     padding: 0 !important;
 }
@@ -304,6 +343,13 @@ body {
     }
 }
 
+.wrapper-rules p {
+    text-align: center;
+}
+.wrapper-costs p {
+    text-align: center;
+}
+
 /* footer sections */
 .footer-section {
     background: $primary-color;
@@ -321,6 +367,13 @@ body {
         font-size: 17px;
         text-align: justify;
     }
+    .wrapper-rules p {
+        text-align: justify !important;
+    }
+    .wrapper-costs p {
+        text-align: justify !important;
+    }
+
     .menu {
         height: auto !important;
     }
