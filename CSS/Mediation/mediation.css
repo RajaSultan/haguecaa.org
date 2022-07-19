@@ -130,7 +130,7 @@ body {
 .menu a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease-in-out;
@@ -174,31 +174,24 @@ body {
   transition: opacity 0.25s ease-in-out 0.35s;
 }
 
-/* footer sections */
-.footer-section {
-  background: #052645;
+.main-heading {
+  margin-top: 120px;
+  text-align: center;
 }
 
-.footer-section img {
-  width: 17rem;
+.content-wrapper .para-1 {
+  line-height: 32px;
+  text-align: justify;
 }
 
-.footer-section .bottom-footer img {
-  height: 36px;
-  width: 36px;
+.para-2 {
+  line-height: 32px;
+  text-align: justify;
 }
 
-.content-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  display: table;
-  min-height: 800px;
-}
-
-.content {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
+.para-3 {
+  line-height: 32px;
+  text-align: justify;
 }
 
 /* End Global Styles */
@@ -221,14 +214,11 @@ body {
 
 .navbar .nav-menu li {
   position: relative;
-  min-width: 200px;
   text-align: right;
 }
 
 .navbar .nav-menu li .dot {
-  display: block;
   color: #fff;
-  padding: 5px 0;
 }
 
 .navbar .nav-menu li .dot::before,
@@ -311,72 +301,14 @@ body {
 }
 
 /* End Nav Styles */
-/* Start Home Styles */
-#home {
-  background-color: #f6f6f6;
-}
-
-#home button {
-  border: 2px solid #ffc107;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  padding: 12px 25px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  margin-top: 20px;
-}
-
-#home button:hover {
-  background-color: #ffc107;
-  color: #fff;
-}
-
-/* End Home Styles */
-/* Start About Styles */
-#about .container {
-  padding: 100px 0;
-}
-
-#about p {
-  width: 60%;
-  margin: 10px auto;
-}
-
-#about img {
-  margin-top: 40px;
-}
-
 /* End About Styles */
-/* Start Services Styles */
-#services {
-  background-color: #eee;
+.linkedin-img img {
+  width: 30px;
+  height: 30px;
 }
 
-#services .services {
-  margin: 40px auto;
-}
-
-#services .services .service {
-  width: 50%;
-  padding: 1%;
-}
-
-#services .text-right {
-  float: right;
-}
-
-#services .text-left {
-  float: left;
-}
-
-/* End Services Styles */
-/* Start Testimonials Styles */
-#test,
-#test .content-wrapper {
-  min-height: 400px;
+.card-body {
+  padding: 0 !important;
 }
 
 /* End Testimonials Styles */
@@ -392,27 +324,38 @@ body {
   display: block;
 }
 
-/* Start Contact Styles */
-#contact {
-  min-height: 600px;
+.articles-section a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  padding: 8px 25px;
 }
 
-#contact .content-wrapper {
-  min-height: 600px;
+.articles-section a:hover {
+  background: #052645 !important;
+  color: #fff !important;
 }
 
-#contact p {
-  color: #eee;
+/* footer sections */
+.footer-section {
+  background: #052645;
 }
 
-#contact .mail {
-  font-size: 30px;
-  margin-top: 40px;
+.footer-section img {
+  width: 17rem;
 }
 
-/* End Contact Styles */
-/* Start Footer Styles */
+.footer-section .bottom-footer img {
+  height: 36px;
+  width: 36px;
+}
+
 @media (max-width: 576px) {
+  .main-heading {
+    font-size: 17px;
+    text-align: justify;
+  }
   .menu {
     height: auto !important;
   }
@@ -432,37 +375,37 @@ body {
 
 @media (min-width: 756px) {
   .navbar .nav-menu li .dot::before {
-    right: -15px;
+    right: -25px;
   }
   .navbar .nav-menu li .dot::after {
-    right: -20px;
+    right: -30px;
   }
   .navbar .nav-menu li .dot span {
-    margin-right: 10px;
+    margin-right: -5px;
   }
 }
 
 @media (min-width: 992px) {
   .navbar .nav-menu li .dot::before {
-    right: 20px;
+    right: -25px;
   }
   .navbar .nav-menu li .dot::after {
-    right: 15px;
+    right: -30px;
   }
   .navbar .nav-menu li .dot span {
-    margin-right: 45px;
+    margin-right: -5px;
   }
 }
 
 @media (min-width: 1200px) {
   .navbar .nav-menu li .dot::before {
-    right: 20px;
+    right: -5px;
   }
   .navbar .nav-menu li .dot::after {
-    right: 15px;
+    right: -10px;
   }
   .navbar .nav-menu li .dot span {
-    margin-right: 45px;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=mediation.css.map */
