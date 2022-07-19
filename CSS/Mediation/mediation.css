@@ -174,22 +174,23 @@ body {
   transition: opacity 0.25s ease-in-out 0.35s;
 }
 
-.main-heading {
+#introduction .main-heading {
   margin-top: 120px;
   text-align: center;
+  padding: 0;
 }
 
-.content-wrapper .para-1 {
+#introduction .content-wrapper .para-1 {
   line-height: 32px;
   text-align: justify;
 }
 
-.para-2 {
+#introduction .para-2 {
   line-height: 32px;
   text-align: justify;
 }
 
-.para-3 {
+#introduction .para-3 {
   line-height: 32px;
   text-align: justify;
 }

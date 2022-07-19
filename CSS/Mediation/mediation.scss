@@ -153,27 +153,28 @@ body {
     opacity: 1;
     transition: opacity 0.25s ease-in-out 0.35s;
 }
+#introduction {
+    .main-heading {
+        margin-top: 120px;
+        text-align: center;
+        padding: 0;
+    }
 
-.main-heading {
-    margin-top: 120px;
-    text-align: center;
+    .content-wrapper .para-1 {
+        line-height: 32px;
+        text-align: justify;
+    }
+
+    .para-2 {
+        line-height: 32px;
+        text-align: justify;
+    }
+
+    .para-3 {
+        line-height: 32px;
+        text-align: justify;
+    }
 }
-
-.content-wrapper .para-1 {
-    line-height: 32px;
-    text-align: justify;
-}
-
-.para-2 {
-    line-height: 32px;
-    text-align: justify;
-}
-
-.para-3 {
-    line-height: 32px;
-    text-align: justify;
-}
-
 /* End Global Styles */
 
 /* Start Nav Styles */
