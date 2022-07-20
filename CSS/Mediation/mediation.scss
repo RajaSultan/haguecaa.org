@@ -161,16 +161,11 @@ body {
     font-size: calc(1.3rem + 0.6vw);
   }
 
-  .content-wrapper .para-1 {
-    line-height: 32px;
-  }
-
-  .para-2 {
-    line-height: 32px;
-  }
-
+  .content-wrapper .para-1,
+  .para-2,
   .para-3 {
     line-height: 32px;
+    text-align: justify;
   }
 }
 

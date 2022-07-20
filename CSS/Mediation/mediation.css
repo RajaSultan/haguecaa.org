@@ -150,14 +150,11 @@ body {
   padding: 0;
   font-size: calc(1.3rem + 0.6vw);
 }
-#introduction .content-wrapper .para-1 {
-  line-height: 32px;
-}
-#introduction .para-2 {
-  line-height: 32px;
-}
+#introduction .content-wrapper .para-1,
+#introduction .para-2,
 #introduction .para-3 {
   line-height: 32px;
+  text-align: justify;
 }
 
 /* End Global Styles */

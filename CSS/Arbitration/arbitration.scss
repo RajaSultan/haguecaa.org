@@ -298,6 +298,9 @@ body {
 }
 
 #rules {
+  p {
+    text-align: justify !important;
+  }
   a {
     border-color: $primary-color !important;
     color: $primary-color !important;
@@ -311,6 +314,7 @@ body {
 #clauses {
   .content-wrapper .para-1 {
     line-height: 32px;
+    text-align: justify !important;
   }
 
   a {
@@ -368,10 +372,10 @@ body {
 }
 
 .wrapper-rules p {
-  text-align: center !important;
+  text-align: justify !important;
 }
 .wrapper-costs p {
-  text-align: center;
+  text-align: justify;
 }
 
 /* footer sections */
