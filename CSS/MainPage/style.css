@@ -4,7 +4,6 @@
   font-family: Lato;
   src: url(../FONTS/Lato-ExtraLight.ttf);
 }
-
 /* general styles */
 html,
 body {
@@ -17,8 +16,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .text-primary-main {
@@ -61,18 +59,15 @@ body {
 .main-header {
   background: #052645;
   text-align: center;
-  position: fixed;
-  /* sticks to the top of the page, regardless of where you scroll */
+  position: fixed; /* sticks to the top of the page, regardless of where you scroll */
   width: 100%;
-  z-index: 999;
-  /* puts itself on top of all other elements on the page */
+  z-index: 999; /* puts itself on top of all other elements on the page */
   padding: 10px 0;
 }
 
 .logo img {
   width: 12rem;
 }
-
 .logo .email {
   -webkit-text-stroke: 0.6px #f1e5ac;
   color: transparent;
@@ -89,14 +84,9 @@ body {
   top: 0;
   margin-left: 2em;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -106,28 +96,22 @@ body {
   width: 30px;
   border-radius: 2px;
   position: relative;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: "";
   position: absolute;
 }
-
 .nav-toggle-label span::before {
   bottom: 10px;
 }
-
 .nav-toggle-label span::before {
   right: 10px;
 }
-
 .nav-toggle-label span::after {
   top: 10px;
 }
-
 .nav-toggle-label span::after {
   right: 10px;
 }
@@ -137,69 +121,55 @@ body {
   background: #052645;
   text-align: left;
   height: 100vh;
-  -webkit-transform: scaleX(-0.05);
-          transform: scaleX(-0.05);
+  transform: scaleX(-0.05);
   margin-left: -15px;
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
-  -webkit-transition: all 0.5s ease-in-out !important;
+  transform-origin: left center;
   transition: all 0.5s ease-in-out !important;
 }
-
 .menu ul {
   list-style: none;
   padding: 0;
   text-align: start;
 }
-
 .menu li {
   padding: 20px 30px;
 }
-
 .menu a {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   opacity: 0;
-  -webkit-transition: opacity 0.15s ease-in-out;
   transition: opacity 0.15s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 .menu a:hover {
   color: #f1e5ac;
 }
 
 #nav-toggle:checked ~ .nav-toggle-label span {
-  background: #052645;
-  /* setting it to the same background as header so it "disappears" */
+  background: #052645; /* setting it to the same background as header so it "disappears" */
 }
 
 /* transforming the before and after span into an X */
 #nav-toggle:checked ~ .nav-toggle-label span::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   bottom: 0;
   background: #f1e5ac;
 }
 
 #nav-toggle:checked ~ .nav-toggle-label span::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 0;
   background: #f1e5ac;
 }
 
 #nav-toggle:checked + .menu {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 #nav-toggle:checked ~ .menu a {
   opacity: 1;
-  -webkit-transition: opacity 0.25s ease-in-out 0.35s;
   transition: opacity 0.25s ease-in-out 0.35s;
 }
 
@@ -207,14 +177,12 @@ body {
 .hague-court-section {
   margin: 110px 0;
 }
-
 .hague-court-section h3 {
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
   color: #4c4c4c;
 }
-
 .hague-court-section p {
   font-size: 17px;
   font-weight: normal;
@@ -227,14 +195,12 @@ body {
 .portfolio-section {
   background: #f8f7f7;
 }
-
 .portfolio-section h3 {
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
   color: #4c4c4c;
 }
-
 .portfolio-section p {
   font-size: 17px;
   line-height: 1.8;
@@ -250,7 +216,6 @@ body {
   font-style: normal;
   color: #4c4c4c;
 }
-
 .neutral-private p {
   font-size: 17px;
   line-height: 1.8;
@@ -263,14 +228,12 @@ body {
 .efficient-section {
   background: #f8f7f7;
 }
-
 .efficient-section h3 {
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
   color: #4c4c4c;
 }
-
 .efficient-section p,
 .efficient-section a {
   font-size: 17px;
@@ -284,30 +247,22 @@ body {
 .news-section {
   padding: 50px 0;
 }
-
 .news-section img {
   width: 100%;
-  -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
-
 .news-section img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .news-section i {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  transform: rotate(-40deg);
 }
-
 .news-section h3 {
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
   color: #4c4c4c;
 }
-
 .news-section p {
   font-size: 17px;
   line-height: 1.8;
@@ -339,7 +294,6 @@ body {
   width: 100%;
   background-size: cover;
 }
-
 .home .hearo-text,
 .home .sign,
 .home .counter,
@@ -349,7 +303,6 @@ body {
   color: #fff;
   font-size: 17px;
 }
-
 .home .counter,
 .home .counter-late,
 .home .counter-more {
@@ -365,7 +318,6 @@ body {
   width: 100%;
   background-size: cover;
 }
-
 .founder p {
   font-size: 18px;
   font-weight: normal;
@@ -380,54 +332,42 @@ body {
   font-style: normal;
   color: #052645 !important;
 }
-
 .explore-further .card-text {
   font-size: 15px;
   line-height: 22px;
   color: #052645 !important;
 }
-
 .explore-further .card-body {
   border-color: #052645 !important;
 }
-
 .explore-further a {
   border-color: #052645 !important;
   color: #052645 !important;
-  -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
-
 .explore-further a:hover {
   background: #052645 !important;
   color: #fff !important;
 }
-
 .explore-further h3 {
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
 }
-
 .explore-further .card {
   overflow: hidden;
   border-color: #fff;
   border-radius: 10px !important;
 }
-
 .explore-further img {
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border-radius: 8px 8px 0 0;
 }
-
 .explore-further img:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+  transform: scale(1.08);
   filter: alpha(opacity=0.6);
   opacity: 0.6;
 }
-
 .explore-further .card-title {
   font-weight: 400;
 }
@@ -436,26 +376,21 @@ body {
 .contact-section .bottom-video {
   position: relative;
 }
-
 .contact-section .center-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .contact-section a {
   padding: 15px 40px;
   border: 1px solid white;
   background: transparent;
   color: white;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border-radius: 0;
 }
-
 .contact-section a:hover {
   background: white;
   color: black;
@@ -466,16 +401,13 @@ body {
 .footer-section {
   background: #052645;
 }
-
 .footer-section img {
   width: 17rem;
 }
-
 .footer-section .bottom-footer img {
   height: 32px;
   width: 32px;
 }
-
 .footer-section .bottom-footer img .footer-text {
   font-weight: 100;
 }
@@ -510,7 +442,6 @@ body {
     width: 10rem !important;
   }
 }
-
 @media (min-width: 768px) {
   .hero-section .video-row {
     margin-top: 80px;
@@ -522,7 +453,6 @@ body {
     padding: 0 200px !important;
   }
 }
-
 @media (min-width: 992px) {
   .hero-section .video-row {
     margin-top: 80px;
@@ -534,7 +464,6 @@ body {
     padding: 0 318px !important;
   }
 }
-
 @media (min-width: 1200px) {
   .hero-section .video-row {
     margin-top: 80px;
@@ -548,5 +477,4 @@ body {
   .founder p {
     padding: 0 300px !important;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

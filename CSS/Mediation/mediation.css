@@ -4,7 +4,6 @@
   font-family: Lato;
   src: url(../FONTS/Lato-ExtraLight.ttf);
 }
-
 /* general styles */
 html,
 body {
@@ -17,8 +16,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*Navbar Section*/
@@ -32,18 +30,15 @@ body {
 .main-header {
   background: #052645;
   text-align: center;
-  position: fixed;
-  /* sticks to the top of the page, regardless of where you scroll */
+  position: fixed; /* sticks to the top of the page, regardless of where you scroll */
   width: 100%;
-  z-index: 999;
-  /* puts itself on top of all other elements on the page */
+  z-index: 999; /* puts itself on top of all other elements on the page */
   padding: 10px 0;
 }
 
 .logo img {
   width: 12rem;
 }
-
 .logo .email {
   -webkit-text-stroke: 0.6px #f1e5ac;
   color: transparent;
@@ -60,14 +55,9 @@ body {
   top: 0;
   margin-left: 2em;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -77,28 +67,22 @@ body {
   width: 30px;
   border-radius: 2px;
   position: relative;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: "";
   position: absolute;
 }
-
 .nav-toggle-label span::before {
   bottom: 10px;
 }
-
 .nav-toggle-label span::before {
   right: 10px;
 }
-
 .nav-toggle-label span::after {
   top: 10px;
 }
-
 .nav-toggle-label span::after {
   right: 10px;
 }
@@ -108,69 +92,55 @@ body {
   background: #052645;
   text-align: left;
   height: 100vh;
-  -webkit-transform: scaleX(-0.05);
-          transform: scaleX(-0.05);
+  transform: scaleX(-0.05);
   margin-left: -15px;
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
-  -webkit-transition: all 0.5s ease-in-out !important;
+  transform-origin: left center;
   transition: all 0.5s ease-in-out !important;
 }
-
 .menu ul {
   list-style: none;
   padding: 0;
   text-align: start;
 }
-
 .menu li {
   padding: 20px 30px;
 }
-
 .menu a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
   opacity: 0;
-  -webkit-transition: opacity 0.15s ease-in-out;
   transition: opacity 0.15s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 .menu a:hover {
   color: #f1e5ac !important;
 }
 
 #nav-toggle:checked ~ .nav-toggle-label span {
-  background: #052645;
-  /* setting it to the same background as header so it "disappears" */
+  background: #052645; /* setting it to the same background as header so it "disappears" */
 }
 
 /* transforming the before and after span into an X */
 #nav-toggle:checked ~ .nav-toggle-label span::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   bottom: 0;
   background: #f1e5ac;
 }
 
 #nav-toggle:checked ~ .nav-toggle-label span::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 0;
   background: #f1e5ac;
 }
 
 #nav-toggle:checked + .menu {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 #nav-toggle:checked ~ .menu a {
   opacity: 1;
-  -webkit-transition: opacity 0.25s ease-in-out 0.35s;
   transition: opacity 0.25s ease-in-out 0.35s;
 }
 
@@ -180,20 +150,14 @@ body {
   padding: 0;
   font-size: calc(1.3rem + 0.6vw);
 }
-
 #introduction .content-wrapper .para-1 {
   line-height: 32px;
-  text-align: justify;
 }
-
 #introduction .para-2 {
   line-height: 32px;
-  text-align: justify;
 }
-
 #introduction .para-3 {
   line-height: 32px;
-  text-align: justify;
 }
 
 /* End Global Styles */
@@ -204,8 +168,7 @@ body {
   margin-top: 200px;
   top: 10%;
   right: 50px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .navbar .nav-menu {
@@ -230,7 +193,6 @@ body {
   content: "";
   border-radius: 50%;
   top: 50%;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -239,8 +201,7 @@ body {
   height: 5px;
   right: 20px;
   border: 2px solid #000;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .navbar .nav-menu li .dot::after {
@@ -248,8 +209,7 @@ body {
   height: 15px;
   border: 2px solid #000;
   right: 15px;
-  -webkit-transform: translateY(-50%) scale(0);
-          transform: translateY(-50%) scale(0);
+  transform: translateY(-50%) scale(0);
 }
 
 .navbar .nav-menu li .dot.active::before,
@@ -260,8 +220,7 @@ body {
 
 .navbar .nav-menu li .dot.active::after,
 .navbar .nav-menu li:hover .dot::after {
-  -webkit-transform: translateY(-50%) scale(1);
-          transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
 }
 
 .navbar .nav-menu li .dot span {
@@ -274,9 +233,7 @@ body {
   padding: 10px 20px;
   border-radius: 3px;
   margin-right: 45px;
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-  -webkit-transition: all 0.3s ease;
+  transform: translateX(20px);
   transition: all 0.3s ease;
 }
 
@@ -288,17 +245,14 @@ body {
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   top: 50%;
-  -webkit-transform: translate(7px, -50%);
-          transform: translate(7px, -50%);
+  transform: translate(7px, -50%);
   right: 1px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .navbar .nav-menu li .dot.active span,
 .navbar .nav-menu li:hover .dot span {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
   opacity: 1;
 }
 
@@ -312,11 +266,8 @@ body {
 #clauses a {
   border-color: #052645 !important;
   color: #052645 !important;
-  -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
-  padding: 8px 25px;
 }
-
 #clauses a:hover {
   background: #052645 !important;
   color: #fff !important;
@@ -325,12 +276,19 @@ body {
 #admin a {
   border-color: #052645 !important;
   color: #052645 !important;
-  -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
-  padding: 8px 25px;
+}
+#admin a:hover {
+  background: #052645 !important;
+  color: #fff !important;
 }
 
-#admin a:hover {
+#costs a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  transition: all 0.7s ease-in-out;
+}
+#costs a:hover {
   background: #052645 !important;
   color: #fff !important;
 }
@@ -338,11 +296,8 @@ body {
 #request a {
   border-color: #052645 !important;
   color: #052645 !important;
-  -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
-  padding: 8px 25px;
 }
-
 #request a:hover {
   background: #052645 !important;
   color: #fff !important;
@@ -368,11 +323,9 @@ body {
 .articles-section a {
   border-color: #052645 !important;
   color: #052645 !important;
-  -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   padding: 8px 25px;
 }
-
 .articles-section a:hover {
   background: #052645 !important;
   color: #fff !important;
@@ -390,11 +343,9 @@ body {
 .footer-section {
   background: #052645;
 }
-
 .footer-section img {
   width: 17rem;
 }
-
 .footer-section .bottom-footer img {
   height: 36px;
   width: 36px;
@@ -409,6 +360,9 @@ body {
     text-align: justify !important;
   }
   .wrapper-costs p {
+    text-align: justify !important;
+  }
+  .wrapper-request p {
     text-align: justify !important;
   }
   .menu {
@@ -427,7 +381,6 @@ body {
     margin-left: 1.5rem;
   }
 }
-
 @media (min-width: 756px) {
   .navbar .nav-menu li .dot::before {
     right: -25px;
@@ -439,7 +392,6 @@ body {
     margin-right: -5px;
   }
 }
-
 @media (min-width: 992px) {
   .navbar .nav-menu li .dot::before {
     right: -25px;
@@ -451,7 +403,6 @@ body {
     margin-right: -5px;
   }
 }
-
 @media (min-width: 1200px) {
   .navbar .nav-menu li .dot::before {
     right: -5px;
@@ -462,5 +413,4 @@ body {
   .navbar .nav-menu li .dot span {
     margin-right: 20px;
   }
-}
-/*# sourceMappingURL=mediation.css.map */
+}/*# sourceMappingURL=mediation.css.map */
