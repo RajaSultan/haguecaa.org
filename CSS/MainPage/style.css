@@ -422,7 +422,6 @@ body {
   font-weight: 100;
 }
 .footer-section .sitemap-navigation {
-  display: inline-block;
   min-width: 100%;
   padding: 0;
   /* Put all this in a media query. Don't forget to style a simple mobile version */
