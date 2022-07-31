@@ -328,12 +328,15 @@ body {
   color: #fff !important;
 }
 
-.wrapper-rules p {
-  text-align: center !important;
+.wrapper-rules a {
+  border-color: #052645 !important;
+  color: #052645 !important;
+  transition: all 0.7s ease-in-out;
+  padding: 8px 25px;
 }
-
-.wrapper-costs p {
-  text-align: center;
+.wrapper-rules a:hover {
+  background: #052645 !important;
+  color: #fff !important;
 }
 
 /* footer sections */

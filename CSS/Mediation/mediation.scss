@@ -344,11 +344,17 @@ body {
   }
 }
 
-.wrapper-rules p {
-  text-align: center !important;
-}
-.wrapper-costs p {
-  text-align: center;
+.wrapper-rules {
+  a {
+    border-color: $primary-color !important;
+    color: $primary-color !important;
+    transition: all 0.7s ease-in-out;
+    padding: 8px 25px;
+  }
+  a:hover {
+    background: $primary-color !important;
+    color: #fff !important;
+  }
 }
 
 /* footer sections */
