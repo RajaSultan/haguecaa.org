@@ -405,7 +405,7 @@
       </button>
     </div>
     <!-- fourth section - Information -->
-    <div class="news-section mt-lg-5 mt-2 overflow-hidden">
+    <div class="news-section mt-lg-5 mt-3 overflow-hidden">
       <div class="container-fluid">
         <h3 class="mb-md-5 mb-4 text-center">LATEST NEWS</h3>
         <div class="images-main offset-1">
@@ -417,8 +417,8 @@
           />
         </div>
         <div
-          class="mt-md-5 mt-3 points-bottom offet-md-0 offset-1"
-          style="height: 20vh; overflow-y: auto"
+          class="mt-md-5 mt-4 points-bottom offet-md-0 offset-1"
+          style="height: 25vh; overflow-y: auto"
         >
           <p
             class="pe-lg-0 pe-3 m-0"
@@ -442,7 +442,7 @@
           </p>
           &nbsp;
           <p
-            class="pe-lg-0 pe-3 mb-md-4 mb-2"
+            class="pe-lg-0 pe-3 m-0"
             data-aos="fade-right"
             data-aos-duration="1500"
             data-aos-easing="linear"
@@ -612,7 +612,7 @@
         >
           <div class="row gx-md-5 align-items-center">
             <div class="col-4">
-              <a href=""
+              <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                 ><img class="img-fluid" src="./ASSETS/sitemap-solid.svg" alt=""
               /></a>
             </div>
@@ -632,6 +632,124 @@
           </div>
         </div>
       </footer>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Site Map</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <section class="sitemap-wrapper">
+                <ul id="menu-sitemap-menu" class="sitemap-navigation">
+                  <li class="menu-item menu-item-has-children">
+                    <a href="">HAGUE CAA</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item menu-item-has-children">
+                        <!-- Arbitration site map -->
+                        <a href="./arbitration.html">Arbitration</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item">
+                            <a href="./arbitration.html#introduction"
+                              >Introduction</a
+                            >
+                          </li>
+                          <li class="menu-item">
+                            <a href="./arbitration.html#advantages"
+                              >Advantages</a
+                            >
+                          </li>
+                          <li class="menu-item">
+                            <a href="./arbitration.html#rules">Rules </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./arbitration.html#clauses">Clauses</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./arbitration.html#costs">Costs</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./arbitration.html#request">Request </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- Mediation site map -->
+                      <li class="menu-item menu-item-has-children">
+                        <a href="./mediation.html">Mediation</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item">
+                            <a href="./mediation.html">Introduction</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./mediation.html">Rules</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./mediation.html#clauses-section"
+                              >Clauses
+                            </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./mediation.html#costs">Costs</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./mediation.html#request">Request </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- Organization site map -->
+                      <li class="menu-item menu-item-has-children">
+                        <a href="./organization.html">Organization</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item">
+                            <a href="./organization.html">Introduction</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./organization.html#directors"
+                              >Directors</a
+                            >
+                          </li>
+                          <li class="menu-item">
+                            <a href="./organization.html#advisory">Advisory </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./organization.html#technical"
+                              >Technical</a
+                            >
+                          </li>
+                          <li class="menu-item">
+                            <a href="./organization.html#rules">Rules</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./organization.html#support">Support</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="./organization.html#articles">Articles</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Bootstrap JavaScript Libraries -->
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />

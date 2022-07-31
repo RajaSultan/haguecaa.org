@@ -439,6 +439,103 @@ body {
       font-weight: 100;
     }
   }
+
+  // The entire menu, assign it a class when you call it
+  .sitemap-navigation {
+    $menu-spacing: 2em;
+    $border-width: 4px;
+    $border-color: #4088c1;
+    $page-background: #fefeff;
+    display: inline-block;
+    min-width: 100%;
+    padding: 0;
+
+    ul,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    /* Put all this in a media query. Don't forget to style a simple mobile version */
+
+    // Vertical connectors
+    .menu-item::before, // all items
+  > .menu-item-has-children > .sub-menu::before {
+      // "Home" link
+      content: "";
+      display: block;
+      position: relative;
+      left: 50%;
+      margin-left: -$border-width/2; // Center it
+      // width: 100%;
+      border-left: $border-color solid $border-width;
+      height: $menu-spacing;
+    }
+
+    // First level under "Home"
+    > .menu-item-has-children {
+      // Hide vertical connector, we're using the ::before down below
+      &::before {
+        display: none;
+      }
+
+      > .sub-menu {
+        display: flex;
+        justify-content: space-between;
+
+        // Horizontal connector
+        border-top: $border-color solid $border-width;
+        margin-top: $menu-spacing;
+
+        // Vertical connector under "Home"
+        &::before {
+          position: absolute;
+          top: -$menu-spacing;
+          margin-top: -$border-width;
+        }
+
+        > .menu-item {
+          flex: 1 0 auto;
+          // Bring them up above the horizontal connector
+          margin-top: -$border-width;
+          margin-right: 1rem;
+          // Horizontal spacing on menu items
+        }
+      }
+    }
+  }
+  .sitemap-wrapper {
+    text-align: center;
+  }
+
+  .sitemap-navigation {
+    // All links
+    a {
+      background: #093f72;
+      border-radius: 0.25em;
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: 0.25s;
+    }
+
+    // Home link
+    > .menu-item-has-children > a {
+      background: $primary-color;
+      font-size: 1rem;
+    }
+
+    // Top-level child links
+    > .menu-item-has-children > .sub-menu > .menu-item > a {
+      background: $primary-color;
+    }
+  }
 }
 
 /*Media Queries Started*/
@@ -450,6 +547,9 @@ body {
     img {
       width: 10rem;
     }
+  }
+  .sitemap-navigation {
+    overflow-x: scroll;
   }
 
   .menu {
