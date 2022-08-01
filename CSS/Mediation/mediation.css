@@ -350,6 +350,68 @@ body {
   height: 36px;
   width: 36px;
 }
+.footer-section .sitemap-navigation {
+  min-width: 100%;
+  padding: 0;
+  /* Put all this in a media query. Don't forget to style a simple mobile version */
+}
+.footer-section .sitemap-navigation ul,
+.footer-section .sitemap-navigation li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.footer-section .sitemap-navigation a {
+  display: inline-block;
+}
+.footer-section .sitemap-navigation .menu-item::before,
+.footer-section .sitemap-navigation > .menu-item-has-children > .sub-menu::before {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  margin-left: -2px;
+  border-left: #4088c1 solid 4px;
+  height: 2em;
+}
+.footer-section .sitemap-navigation > .menu-item-has-children::before {
+  display: none;
+}
+.footer-section .sitemap-navigation > .menu-item-has-children > .sub-menu {
+  display: flex;
+  justify-content: space-between;
+  border-top: #4088c1 solid 4px;
+  margin-top: 2em;
+}
+.footer-section .sitemap-navigation > .menu-item-has-children > .sub-menu::before {
+  position: absolute;
+  top: -2em;
+  margin-top: -4px;
+}
+.footer-section .sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item {
+  flex: 1 0 auto;
+  margin-top: -4px;
+  margin-right: 1rem;
+}
+.footer-section .sitemap-wrapper {
+  text-align: center;
+}
+.footer-section .sitemap-navigation a {
+  background: #093f72;
+  border-radius: 0.25em;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: 0.25s;
+}
+.footer-section .sitemap-navigation > .menu-item-has-children > a {
+  background: #052645;
+  font-size: 1rem;
+}
+.footer-section .sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item > a {
+  background: #052645;
+}
 
 @media (max-width: 576px) {
   .main-heading {
